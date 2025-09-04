@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单作业</title>
+  <!-- 新 Bootstrap5 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+
+  <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+  <script src="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+  p {
+    display: inline-block;
+  }
+
+  .xin {
+    color: red;
+
+  }
+
+  /* .butn {
+    display: flex;
+    justify-content: flex-end;
+  } */
+</style>
+
+<body>
+  <div class="container">
+    <h2>新增供应商</h2>
+    <hr>
+    <div class="mb-3 mt-3">
+
+      <label for="" class="form-label">供应商名称<p class="xin">*</p></label>
+      <input name="uname" class="form-control" type="text" name="username" placeholder="请输入供应商名称">
+    </div>
+    <div class="mb-3 mt-3">
+
+      <label for="" class="form-label">统一信用代码<p class="xin">*</p></label>
+      <input name="uname" class="form-control" type="text" name="xinyongname" placeholder="请输入统一信用代码">
+    </div>
+    <div class="mb-3 mt-3">
+
+      <label for="" class="form-label">地址</label>
+      <textarea class="form-control" type="text" name="address"></textarea>
+    </div>
+    <div class="mb-3 mt-3">
+
+      <label for="" class="form-label">是否合格<p class="xin">*</p></label>
+      <br>
+      <input type="radio" class="form-check-inline">是
+      <input type="radio" class="form-check-inline">否
+    </div>
+    <div class="mb-3 mt-3">
+
+      <label for="" class="form-label">联系人</label>
+      <input name="uname" class="form-control" type="text" name="username" placeholder="请输入联系人姓名">
+    </div>
+    <div class="mb-3 mt-3">
+
+      <label for="" class="form-label">电话</label>
+      <input name="uname" class="form-control" type="text" name="phone" placeholder="请输入联系电话">
+    </div>
+    <div class="mb-3 mt-3">
+
+      <label for="" class="form-label">供应商类型<p class="xin">*</p></label>
+      <br>
+      <select class="form-select" name="leixin" id="" aria-placeholder="请输入供应商类型">
+        <option selected>请输入供应商类型</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+      </select>
+    </div>
+    <div class="mb-3 mt-3">
+
+      <label for="" class="form-label" placeholder="请输入备注信息">备注</label>
+      <textarea class="form-control" type="text" name="add"></textarea>
+    </div>
+    <!-- <a href="" class="btn btn-secondary butn col-md-1 p-3 offset-md-4">取消</a> -->
+    <!-- <a href="" class="btn btn-primary butn col-sm-1 p-3 offset-md-2">确认</a> -->
+    <a href="#" class="btn btn-secondary text-end">取消</a>
+    <a href="#" class="btn btn-primary text-end">确认</a>
+  </div>
+</body>
+
+</html>
