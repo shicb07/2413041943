@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    div {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    img {
+      width: 100px;
+
+    }
+  </style>
+  <script>
+    function turnOn() {
+      document.getElementById("pic").src = "./on.png"
+    }
+    function turnOff() {
+      document.getElementById("pic").src = "./off.png"
+    }
+  </script>
+</head>
+
+<body>
+  <img src="./off.png" alt="" id="pic">
+  <br>
+  <!-- <img src="./on.png" alt="" id="pic"> -->
+  <button onclick="turnOn()">开灯</button>
+  <button onclick="turnOff()">关灯</button>
+
+  <!-- <script>
+    result = document.getElementById("username").value;//在网页上取元素
+    alert(result)
+
+
+  </script> -->
+</body>
+
+</html>

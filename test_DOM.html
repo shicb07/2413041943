@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    div {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    img {
+      width: 100px;
+
+    }
+  </style>
+  <script>
+    function changeText() {
+      document.getElementById("username").value = "软件学院"
+    }
+    function turnOn() {
+      document.getElementById("pic1").scr = "img on.jpg"
+    }
+    function turnOff() {
+      document.getElementById("pic2").scr = "img off.jpg"
+    }
+  </script>
+
+</head>
+
+<body>
+  <input value="中北大学" id="username" type="text">
+  <button onclick="changeText()">填充文本框内容</button>
+  <img src="./off.png" alt="" id="pic0">
+  <br>
+  <button onclick="turnOn()">开灯</button>
+  <button onclick="turnOff()"></button>
+  <img src="./on.png" alt="" id="pic1">
+  <script>
+    result = document.getElementById("username").value;//在网页上取元素
+    alert(result)
+
+  </script>
+</body>
+
+</html>

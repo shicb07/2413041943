@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>控制图片隐藏显示</title>
+  <style>
+
+  </style>
+  <script>
+    function show() {
+      document.getElementById("pic").style = "display:true"
+    }
+    function hide() {
+      document.getElementById("pic").style = "display:none"
+    }
+  </script>
+</head>
+
+<body>
+  <img id="pic" src="./on.png" alt="" height="400px">
+  <button onclick="show()">显示图片</button>
+  <button onclick="hide()">隐藏图片</button>
+</body>
+
+</html>
